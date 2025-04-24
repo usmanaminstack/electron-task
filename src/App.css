@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #f3f4f6; */
+  color: #111827;
+  position: relative;
+  /* display: flex; */
+}
+
+.dark-mode {
+  background-color: #111827;
+  color: white;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 0;
+}
+
+.toggle-button {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #4b5563;
+}
+
+.dark-mode .toggle-button {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.dark-mode .toggle-button:hover {
+  background-color: #e5e7eb;
+}
+
+/* Tabs Container */
+.tabs-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  /* border-bottom: 2px solid #ddd; */
+}
+
+.tab-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.button{
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+.button:hover{
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #8ab5fa, #9299a9);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.tab-button.active {
+  background-color: #007BFF; /* Tailwind bg-blue-500 */
+  color: white;
+}
+
+.tab-button:hover {
+  background-color: #f1f1f1; /* Slightly lighter shade */
+}
+
+/* Tab Content */
+.tab-content {
+  padding: 20px;
+  /* border-top: 1px solid #ddd; */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tabs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
