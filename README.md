@@ -73,9 +73,7 @@ This requires:
 ---
 
 ## ✨ Bonus Features (Optional)
-- [ ] Dark Mode toggle (planned).
-- [ ] Saving multiple voice notes (planned).
-- [ ] State management using Zustand (planned).
+- [ ] Dark Mode toggle.
 
 ---
 
