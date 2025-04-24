@@ -14,9 +14,7 @@ function createWindow() {
       nodeIntegration: false
     }
   });
-  win.loadURL('http://localhost:5173');
-  console.log('Electron app is running...');
-  win.webContents.openDevTools(); // Open DevTools
+  win.loadURL('http://localhost:5173')
 
   // More main process logs
   win.webContents.on('did-finish-load', () => {
